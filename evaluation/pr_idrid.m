@@ -1,7 +1,7 @@
 clc
 clear
 pred_path='../results/';
-label_path= '/home/data/guo/dataset/IDRiD/label_raw/';
+label_path= 'xxxx/dataset/IDRiD/label_raw/';
 num_threshold = 30;
 
 %%%% EX %%%%
@@ -20,7 +20,7 @@ for i=0:num_threshold % loop over thresholds
 
     for ind_img=1:length(pred_img_all)
         tp = 0;
-		    tn = 0;
+	tn = 0;
         fp = 0;
         fn = 0;
         pred_img = imread([pred_path pred_img_all(ind_img).name]); % 0-255
